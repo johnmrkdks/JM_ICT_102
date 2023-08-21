@@ -18,6 +18,5 @@ public class submissionTask {
         System.out.printf("All scores entered are : %s \n", scores);
         Collections.sort(scores);
         System.out.printf("Sorted list : %s", scores);
-
     }
 }
