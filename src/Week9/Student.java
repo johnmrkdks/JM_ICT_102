@@ -5,7 +5,7 @@ public class Student {
     private String ID;
     private String Email;
 
-    public Student(String n, String id, String e){
+    public Student(String n, String id, String e){  //Constructor
         Name = n;
         ID = id;
         Email = e;
