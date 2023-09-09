@@ -8,8 +8,8 @@ public class assessment4 {
         Scanner sc = new Scanner(System.in);
 
         //calling the constructor in song class
-        song song1 = new song("Beautiful", "Akon");
-        song song2 = new song("Smack That", "Akon", "Akon", 12, "pop");
+        song song1 = new song("", "");
+        song song2 = new song("", "", "", 12, "");
 
         //asking the user to input the song title and artist
         System.out.println("\nFor the First song object, the USER will only provide song title and artist\n");
@@ -19,7 +19,7 @@ public class assessment4 {
         song1.artist = sc.nextLine();
 
         //printing the song title and artist give by the user
-        System.out.println("Title : "+song1.title + "\nArtist : "+song1.artist);
+        System.out.println("Title : "+song1.getTitle() + "\nArtist : "+song1.getArtist());
 
         //asking for the song details
         System.out.println("\nFor the Second song object, the USER will provide ALL the song information for all Instance variables\n");
@@ -34,24 +34,29 @@ public class assessment4 {
         System.out.print("Enter the duration: ");
         song2.duration = sc.nextInt();
 
-        //displaying all song informations
+        //displaying all song information
         System.out.println("\nUse ACCESSOR functions from song class to display all song information\n");
-        System.out.println("Title: "+song2.title);
-        System.out.println("Writer: "+song2.writer);
-        System.out.println("Artist: "+song2.artist);
-        System.out.println("Duration: "+song2.duration);
-        System.out.println("Genre: "+song2.genre);
+        System.out.println("Title: "+song2.getTitle());
+        System.out.println("Writer: "+song2.getWriter());
+        System.out.println("Artist: "+song2.getArtist());
+        System.out.println("Duration: "+song2.getDuration());
+        System.out.println("Genre: "+song2.getGenre());
 
         //manual modification the song information in song class
         System.out.println("\nUse MUTATOR functions from song class to modify song ARTIST and GENRE and display all song information AGAIN\n");
-        song2.setArtist(song2.artist = "Sarah");
-        song2.setGenre(song2.genre = "rock");
+        System.out.print("Update song artist name: ");
+        String song2ModifiedArtist = sc.next();
+        song2.setArtist(song2ModifiedArtist);
+        System.out.print("Update song genre: ");
+        String song2ModifiedGenre = sc.next();
+        song2.setGenre(song2ModifiedGenre);
+
 
         //printing the updated song information
-        System.out.println("Title: "+song2.title);
-        System.out.println("Writer: "+song2.writer);
-        System.out.println("Artist: "+song2.artist);
-        System.out.println("Duration: "+song2.duration);
-        System.out.println("Genre: "+song2.genre);
+        System.out.println("Title: "+song2.getTitle());
+        System.out.println("Writer: "+song2.getWriter());
+        System.out.println("Artist: "+song2.getArtist());
+        System.out.println("Duration: "+song2.getDuration());
+        System.out.println("Genre: "+song2.getGenre());
     }
 }

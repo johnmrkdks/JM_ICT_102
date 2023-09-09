@@ -25,7 +25,7 @@ public class cricket {
         } while (s == 'Y' || s == 'y'); //checking user input for yes or no
 
 
-        for (int i = 0; i < scores.size(); i++){ //summing up all the index in ArrayList score
+        for (int i = 0; i < scores.size(); i++){ //adding all the index of ArrayList score
             sum += scores.get(i);
         }
 

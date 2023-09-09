@@ -25,19 +25,19 @@ public class song {
 
     //SETTER - METHODS TO PERFORM OPERATIONS
     public void setTitle(String Title){
-        Title = title;
+        title = Title;
     }
     public void setWriter(String Writer){
-        Writer = writer;
+        writer = Writer;
     }
     public void setArtist(String Artist){
-        Artist = artist;
+        artist = Artist;
     }
     public void setDuration(int Duration){
-        Duration = duration;
+        duration = Duration;
     }
     public void setGenre(String Genre){
-        Genre = genre;
+        genre = Genre;
     }
 
 
